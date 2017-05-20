@@ -9,46 +9,50 @@
     <!--linking bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!--linking stylesheet -->
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="assets/css/style.css">
   </head>
 
   <body>
 
   	<h1>Totally Trivial Trivia!</h1>
 
+  	<div id="container">
+
       <!-- Div containing our stopwatch controls -->
+      <button type="submit" class="btn btn-default" id="start">Start!</button>
 		<div id="wrapper">
 			<div id="display">
-			<h2>Time remaining: <span id=remaining></span></h2>
+			<h2>Time remaining: <span id=remaining>10</span></h2>
 			</div>
 		</div>
 
       <!-- Div containing our buttons -->
+      
 
       	<div id="question1">
       		<h3>What was the first full length CGI movie?</h3>
 		<form>
 			<div class="radio-inline">
 			  <label>
-			    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
+			    <input type="radio" name="inlineRadioOptions" id="Q1inlineRadio1" value="option1">
 			    A bugs life
 			  </label>
 			</div>
 			<div class="radio-inline">
 			  <label>
-			    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+			    <input type="radio" name="inlineRadioOptions" id="Q1inlineRadio2" value="option2">
 			    Monsters Inc
 			  </label>
 			</div>
 			<div class="radio-inline">
 			  <label>
-			    <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option2">
+			    <input type="radio" name="inlineRadioOptions" id="Q1inlineRadio3" value="option2">
 			    Toy Story
 			  </label>
 			</div>
 			<div class="radio-inline">
 			  <label>
-			    <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option2">
+			    <input type="radio" name="inlineRadioOptions" id="Q1inlineRadio4" value="option2">
 			    The Lion King
 			  </label>
 			</div>
@@ -58,30 +62,30 @@
 
       	<div id="question2">
       	<form>
-      		<h3>Which of these is not a name of one of the spice girls?</h3>
+      		<h3>Which of these is not a name of one of Led Zeppelin?</h3>
 
 			<div class="radio-inline">
 			  <label>
-			    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
-			    Sporty Spice
+			    <input type="radio" name="inlineRadioOptions" id="Q2inlineRadio1" value="option1" checked>
+			    Jimmy Page
 			  </label>
 			</div>
 			<div class="radio-inline">
 			  <label>
-			    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-			    Fred Spice
+			    <input type="radio" name="inlineRadioOptions" id="Q2inlineRadio2" value="option2">
+			    Carlos Santana
 			  </label>
 			</div>
 			<div class="radio-inline">
 			  <label>
-			    <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option2">
-			    Scary Spice
+			    <input type="radio" name="inlineRadioOptions" id="Q2inlineRadio3" value="option2">
+			    Robert Plant
 			  </label>
 			</div>
 			<div class="radio-inline">
 			  <label>
-			    <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option2">
-			    Posh Spice
+			    <input type="radio" name="inlineRadioOptions" id="Q2inlineRadio4" value="option2">
+			    John Paul Jones
 			  </label>
 			</div>
 		</form>
@@ -93,25 +97,25 @@
 
 			<div class="radio-inline">
 			  <label>
-			    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
+			    <input type="radio" name="inlineRadioOptions" id="Q3inlineRadio1" value="option1" checked>
 			    New York Knicks
 			  </label>
 			</div>
 			<div class="radio-inline">
 			  <label>
-			    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+			    <input type="radio" name="inlineRadioOptions" id="Q3inlineRadio2" value="option2">
 			    Portland Trail Blazers
 			  </label>
 			</div>
 			<div class="radio-inline">
 			  <label>
-			    <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option2">
+			    <input type="radio" name="inlineRadioOptions" id="Q3inlineRadio3" value="option2">
 			    Los Angeles Lakers
 			  </label>
 			</div>
 			<div class="radio-inline">
 			  <label>
-			    <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option2">
+			    <input type="radio" name="inlineRadioOptions" id="Q3inlineRadio4" value="option2">
 			    Chicago Bulls
 			  </label>
 			</div>
@@ -124,37 +128,40 @@
 
 			<div class="radio-inline">
 			  <label>
-			    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
+			    <input type="radio" name="inlineRadioOptions" id="Q4inlineRadio1" value="option1" checked>
 			    Nirvana
 			  </label>
 			</div>
 			<div class="radio-inline">
 			  <label>
-			    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+			    <input type="radio" name="inlineRadioOptions" id="Q4inlineRadio2" value="option2">
 			    Backstreet Boys
 			  </label>
 			</div>
 			<div class="radio-inline">
 			  <label>
-			    <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option2">
+			    <input type="radio" name="inlineRadioOptions" id="Q4inlineRadio3" value="option2">
 			    The Offspring
 			  </label>
 			</div>
 			<div class="radio-inline">
 			  <label>
-			    <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option2">
+			    <input type="radio" name="inlineRadioOptions" id="Q4inlineRadio4" value="option2">
 			    No Doubt
 			  </label>
 			</div>
+			<br>
+			<button type="submit" class="btn btn-default" id="done">Done</button>
 		</form>
 		</div>
 
-
+	</div>
+	
     <!-- jQuery -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
 
     <!-- Script -->
-    <script type="text/javascript" src="stopwatchSolution.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
 
   </body>
 
