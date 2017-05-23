@@ -26,6 +26,8 @@ var answerQuestion4= $("#Q4inlineRadio1").parent().text().trim();
     $("#done").click(function(e) {
       e.preventDefault();
       $("#allDone").show();
+      counter=1
+      $("#remaining").html(counter);
     });
  
   // if (counter==0){
@@ -36,19 +38,18 @@ var answerQuestion4= $("#Q4inlineRadio1").parent().text().trim();
 $("#start").click(function() {
      var timer = setInterval(timer, 1000);
 
-
       function timer(){
       counter--;
       $("#remaining").text(counter);
 
         if (counter <= 0){
-          console.log("something");
           clearInterval(timer);
           $("#done").click(function() {
           counter = 10;
           $("#remaining").html("10");
 
             });
+          $("#allDone").show();
           }
       }          
 
